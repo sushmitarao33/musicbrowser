@@ -1,0 +1,103 @@
+$primaryColor: #1e1f22;
+$white:#ffffff;
+$nav-color:#15161a;
+$nav-height:60px;
+$breakpoint:700px;
+$icon-size:20px;
+$yellow:#FFE4B5;
+//fonts
+$sanFrancisco: "SanFrancisco";
+//urls
+$sanFrancisco-woff2: url("./fonts/sanfranciscodisplay-regular-webfont.woff2");
+$sanFrancisco-woff: url("./fonts/sanfranciscodisplay-regular-webfont.woff");
+$sanFrancisco-ttf: url("./fonts/sanfranciscodisplay-regular-webfont.ttf");
+$sanFrancisco-svg: url("./fonts/sanfranciscodisplay-regular-webfont.svg");
+$sanFrancisco-eot: url("./fonts/sanfranciscodisplay-regular-webfont.eot");
+@font-face {
+    font-family: $sanFrancisco;
+    src: $sanFrancisco-woff2 format("woff2"), $sanFrancisco-woff format("woff"), $sanFrancisco-ttf format("truetype"), $sanFrancisco-svg format("svg"), $sanFrancisco-eot format("eot");
+}
+* {
+    box-sizing: border-box;
+    &:before {
+        box-sizing: border-box;
+    }
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+span[class=screen-reader-text] {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    background: $primaryColor;
+    color: $white;
+    font-family: $sanFrancisco, sans-serif;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+[class*="col-"] {
+    padding: .75em;
+    float: left;
+}
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+.align {
+    text-align: left;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+*:before,
+*:after {
+    box-sizing: border-box;
+}

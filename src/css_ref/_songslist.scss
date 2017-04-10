@@ -1,0 +1,63 @@
+/***** Song list*******/
+
+#top-songs-panel {
+    margin: 1.5em 0 2em;
+}
+.display-list {
+    padding: 20px 0;
+    #showLessBtn {
+        display: none;
+    }
+    #showMoreBtn {
+        display: none;
+    }
+    button {
+        background-color: #EDCB62;
+        border: none;
+        color: white;
+        padding: 6px 33px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 4px;
+    }
+}
+ul.list {
+    padding: 0;
+    margin: 0;
+    display: block;
+    li {
+        margin: 0;
+        display: block;
+        list-style: none;
+        text-align: left;
+        cursor: pointer;
+        background-image: url("../images/artist/justin.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 30px;
+        padding: 10px 0 5px 60px;
+
+        &:first-child{
+            background-image: url("../images/artist/rachel.png");
+        }
+        &:nth-child(3){
+          background-image: url("../images/artist/chainsmokers.png");
+        }
+        &:nth-child(5){
+          background-image: url("../images/artist/rachel.png");
+        }
+        div {
+            &:first-child {
+                color: #FFE4B5;
+                width: 13.125em;
+                display: inline-block;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+    }
+}

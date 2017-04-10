@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music browser</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <!-- navigation -->
+      <nav class="topnav">
+       <ul id="mobile-menu">
+          <li><a href="#" id="nav-mobile" class="hamburger" onclick="toggleClass('cross')">&#9776;
+          <span class="screen-reader-text">music browser menu</span></a></li>
+          <li class="cross" ><a href="#" onclick="toggleClass('hamburger')">X
+          <span class="screen-reader-text">search browser menu</span></a></li>
+        </ul>
+
+        <ul id="desktop-menu" class="desktop">
+
+          <li><a href="#">MY MUSIC</a></li>
+          <li><a href="#">PLAYLIST</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">EXPLORE</a></li>
+        </ul>
+        <ul class="search">
+          <li><a href="#"><button class="search-icon"></button></a></li>
+        </ul>
+      </nav>
+      <!-- /.navigation -->
+    </header>
+    <section id="main">
+      <!-- grid layout-->
+      <div class="row clearfix first">
+        <div class="col-8">
+
+          <div class="row clearfix artgallery">
+            <div class="col-6 bgColor">
+              <figure>
+                <img src="./images/musician.png" alt="Black and white photograph of Emilia Clarke as Daenerys Targaryen">
+                <figcaption><span>New and Noteworth.</span><br/><span> Kicking off 2016 with these new hits</span></figcaption>
+              </figure>
+            </div>
+            <div class="col-6 bgColor">
+
+              <figure>
+                <img src="./images/Music.jpg" alt="Black and white photograph of Emilia Clarke as Daenerys Targaryen">
+                <figcaption><span>Pre-Order New Music</span><br/><span>Available later this season</span></figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="row clearfix artgallery">
+            <div class="col-6">
+              <figure>
+            		<img src="./images/musicnotes.jpg" alt="Black and white photograph of Emilia Clarke as Daenerys Targaryen">
+            		<figcaption><span>Best of 2015</span><br/><span>Rewind last year’s best hits</span></figcaption>
+            	</figure>
+            </div>
+            <div class="col-6">
+              <figure>
+            		<img src="./images/guitar-amp.png" alt="Black and white photograph of Emilia Clarke as Daenerys Targaryen">
+            		<figcaption><span>New Artist Spotlight</span><br/><span>Hear some of the newest hits in 2016</span></figcaption>
+            	</figure>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1 divider"><hr width="1" id="vertical-line" size="450"></hr></div>
+         <!--Top songs -->
+          <div id="top-songs-panel" class="col-3 top-songs">
+
+            <div class="align"><h3>TOP SONGS</h3></div>
+            <ul id="list-items" class="list">
+              <li>
+
+                <div>Panda</div><br/><div>Desiigner</div>
+
+              </li>
+              <li><div>Needed Me</div><br/><div>Rihanna</div></li>
+              <li><div>Don't Let Me Down</div><br/><div>Lukas Graham</div></li>
+              <li class="hide-items"><div>7 Years</div><br/><div>Rihanna, Drake</div></li>
+              <li class="hide-items"><div>Work</div><br/><div>Designer</div></li>
+              <li class="hide-items"><div>I Took A Pill In Ibiza - Seeb Remix</div><br/><div>Mike Posner</div></li>
+            </ul>
+            <div class="align display-list">
+              <button id="showMoreBtn">Show More</button>
+              <button id="showLessBtn">Show Less</button>
+            </div>
+
+          </div> <!-- 25% -->
+
+          <footer>
+            <ul>
+              <li>Copyright@2016, All rights reserved</li>
+              <li>Contact Us</li>
+              <li>Privacy & cookies</li>
+              <li>Terms of Use</li>
+              <li>Sales and Refunds</li>
+              <li>Site Map</li>
+            </ul>
+          </footer>
+    </section>
+
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

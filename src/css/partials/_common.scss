@@ -1,0 +1,244 @@
+/* grid styles */
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.divider{
+  hr{
+    height:440px;
+  }
+}
+
+
+#vertical-line{
+  padding-top: 10px;
+  position: relative;
+  top:33px;
+}
+
+.row {
+    margin: 1.5em 0 2em;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.artgallery div:nth-child(even) {
+    color: $white;
+}
+
+.artgallery div:nth-child(odd) {
+    color: $yellow;
+}
+
+figure {
+    margin: .5vw;
+    position: relative;
+    figcaption {
+        text-align: left;
+        margin: 10px;
+        position: absolute;
+        top: 55%;
+        left: 6%;
+        span:first-child {
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+    img {
+        height: auto;
+        display: table-cell;
+        height: 179px;
+        width: 100%;
+        background-color: #999;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+/********  header styles*************/
+
+header {
+    background: #313236;
+    font-size: 1.25em;
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+#main {
+    background: #1e1f22;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 0 auto;
+    min-height: 100%;
+    margin-bottom: -60px;
+    position: relative;
+  }
+
+nav {
+    margin: 0;
+    padding: .15em;
+    text-align: center;
+    color: $white;
+    ul {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        li {
+            display: inline-block;
+            font-weight: normal;
+            padding: .5em 1.25em;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+.container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.hamburger {
+    display: inline-block;
+    font-size: 1.875em;
+}
+
+.search-icon {
+    display: inline-block;
+    height: 35px;
+    width: 20px;
+    background: url("../images/search-icon.png") no-repeat;
+    background-size: 16px 44px;
+    background-position: center center;
+    border: none;
+}
+
+.cross {
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: bold;
+    display: none;
+    float: left;
+    position: relative;
+    top: 8px;
+    left: 3px;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+  /* large Desktops */
+  @media all and (min-width : 1300px) {
+    footer {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+
+
+/* Desktop, Tablets */
+   @media all and (min-width : 768px) {
+     /* Styles */
+       #top-songs-panel {
+
+         #list-items li.hide{
+           display: block!important;
+         }
+
+           #showLessBtn{
+             display: none!important;
+           }
+
+           #showMoreBtn{
+             display: none!important;
+           }
+       }
+   }
+
+
+/**MOBILE *******/
+
+@media all and (max-width: 480px) {
+    footer {
+        ul{
+        li {
+            display: block;
+              padding: 1em 0;
+        }
+      }
+    }
+
+    #vertical-line{
+      display: none;
+    }
+
+      /* songs panel */
+    #top-songs-panel {
+        padding-left: 40px;
+
+        //hide li(3) onwards and display/hide buttons
+        #list-items li.hide-items{
+          display: none;
+        }
+
+        #showMoreBtn{
+          display: block;
+        }
+    }
+
+    [class*=col-] {
+        margin: 10px;
+        float: none;
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        height: 180px;
+    }
+    .search {
+        display: inline-block;
+        float: right;
+        position: absolute;
+        right: 0;
+    }
+    #mobile-menu {
+        display: inline-block!important;
+        float: left;
+        position: relative;
+        top: -10px;
+        vertical-align: middle;
+    }
+    .desktop {
+        display: none;
+        float: right;
+        &.responsive {
+            display: block;
+            width: 100%;
+            li {
+                border-bottom: 1px solid #666;
+                display: block;
+                a {
+                    display: table;
+                }
+            }
+        }
+    }
+}
